@@ -117,7 +117,7 @@ HR-Policy-Agent/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/USERNAME/hr-policy-agent.git
+git clone https://github.com/mpreetam07/hr-policy-agent.git
 cd hr-policy-agent
 ```
 
