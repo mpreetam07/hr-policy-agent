@@ -10,6 +10,8 @@ import os
 
 from dotenv import load_dotenv
 load_dotenv()
+# COMMENT THE ABOVE 2 LINES IF API KEY SET AS AN ENVIRONMENT VARIABLE MANUALLY
+# set GROQ_API_KEY=your_api_key_here
 
 # LLM SETUP
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
@@ -19,6 +21,7 @@ llm = ChatGroq(
     model="llama-3.3-70b-versatile",
     max_retries=3
 )
+
 
 # EMBEDDING + CHROMADB
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
