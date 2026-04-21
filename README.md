@@ -134,6 +134,7 @@ Create a `.env` file:
 ```
 GROQ_API_KEY=your_api_key_here
 ```
+OR set it as an environment variable before running the app.
 
 ### 4. Run the application
 
