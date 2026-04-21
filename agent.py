@@ -8,15 +8,17 @@ import chromadb
 from datetime import datetime
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
 
 # LLM SETUP
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 llm = ChatGroq(
+    api_key=GROQ_API_KEY,
     model="llama-3.3-70b-versatile",
     max_retries=3
 )
-
 
 # EMBEDDING + CHROMADB
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
